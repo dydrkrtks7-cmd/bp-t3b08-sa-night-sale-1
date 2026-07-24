@@ -1,213 +1,362 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인문 철학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아현 클럽 추천 가이드 — 조건별 선택과 이용 안내</title>
+    <meta name="description" content="아현 지역 클럽 추천 가이드: 초보자와 단골 모두를 위한 선택 기준, 이용 전 확인사항, 조건별 적합성을 상세히 안내합니다.">
+    <meta name="keywords" content="아현 클럽, 클럽 추천, 아현 nightlife, 클럽 가이드, 조건별 선택">
+    <link rel="canonical" href="https://ahyeon-club-note.gongdeok-club.xyz">
+    <meta property="og:title" content="아현 클럽 추천 가이드 — 조건별 선택과 이용 안내">
+    <meta property="og:description" content="아현 지역 클럽 추천 가이드: 초보자와 단골 모두를 위한 선택 기준, 이용 전 확인사항, 조건별 적합성을 상세히 안내합니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ahyeon-club-note.gongdeok-club.xyz">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="아현 클럽 추천 가이드 — 조건별 선택과 이용 안내">
+    <meta name="twitter:description" content="아현 지역 클럽 추천 가이드: 초보자와 단골 모두를 위한 선택 기준, 이용 전 확인사항, 조건별 적합성을 상세히 안내합니다.">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "아현 클럽 추천 가이드 — 조건별 선택과 이용 안내",
+        "description": "아현 지역 클럽 추천 가이드: 초보자와 단골 모두를 위한 선택 기준, 이용 전 확인사항, 조건별 적합성을 상세히 안내합니다.",
+        "publisher": {
+            "@type": "Person",
+            "name": "지역 정보 정리가"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "지역 정보 정리가"
+        },
+        "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "아현 클럽에서 가장 중요한 선택 기준은 뭔가요?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "개인 취향에 따라 다르지만, 분위기, 음악 장르, 가격대를 먼저 고려해요. 초보라면 리뷰를 꼼꼼히 보고 방문하는 게 좋아요."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "클럽 방문 전에 꼭 확인해야 할 사항이 있나요?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "드레스 코드, 입장 조건, 예약 여부를 미리 체크하세요. 주차 공간이나 대중교통 접근성도 확인하면 편해요."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "어떤 조건에 따라 클럽을 추천받을 수 있나요?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "친구 모임, 솔로 방문, 특별한 이벤트 목적 등 상황에 맞춰 추천드려요. 예산과 음악 취향도 주요 기준이에요."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "아현 클럽의 가격대는 보통 어느 정도인가요?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "클럽마다 차이가 있지만, 일반적으로 입장료 포함 2만 원에서 5만 원 사이예요. 음료와 주류 가도 별도로 고려하세요."
+                    }
+                }
+            ]
+        }
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #faf8f5;
+            color: #2d2a26;
+            line-height: 1.6;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            font-size: 16px;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .v-txt-7bhr {
+            position: sticky;
+            top: 0;
+            background-color: #faf8f5;
+            padding: 24px 0;
+            border-bottom: 1px solid #e07a5f;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .n-head-v2qg {
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        .v-card-0ut2 {
+            display: flex;
+            gap: 16px;
+            font-size: 14px;
+        }
+        .v-card-0ut2 a {
+            text-decoration: none;
+            color: #2d2a26;
+            transition: color 0.3s;
+        }
+        .v-card-0ut2 a:hover {
+            color: #e07a5f;
+        }
+        .v-txt-htnw {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #2d2a26;
+        }
+        .k-hero-kzq6 {
+            padding: 80px 0 40px;
+            border-bottom: 1px solid #e07a5f;
+            margin-bottom: 40px;
+        }
+        .k-hero-kzq6 h1 {
+            font-size: 32px;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+        .k-hero-kzq6 p {
+            font-size: 14px;
+            color: #666;
+            max-width: 600px;
+            margin-bottom: 24px;
+        }
+        .r-box-tdlx {
+            padding: 40px 0;
+            border-bottom: 1px solid #e07a5f;
+            margin-bottom: 40px;
+        }
+        .r-box-tdlx h2 {
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 0.06em;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+        }
+        .k-item-4u5s {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+        }
+        .k-body-wma6 {
+            padding: 24px;
+            border: 1px solid #2d2a26;
+            background-color: #faf8f5;
+            transition: border-color 0.3s;
+        }
+        .k-body-wma6:hover {
+            border-color: #e07a5f;
+        }
+        .k-body-wma6 h3 {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+        .k-body-wma6 p {
+            font-size: 13px;
+            color: #666;
+        }
+        .x-btn-zho4 {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+        .x-btn-zho4 li {
+            padding: 16px 0;
+            border-bottom: 1px solid #e07a5f;
+            font-size: 14px;
+        }
+        .x-btn-zho4 li:last-child {
+            border-bottom: none;
+        }
+        .v-top-1bdx details {
+            margin-bottom: 16px;
+            border: 1px solid #e07a5f;
+            padding: 16px;
+        }
+        .v-top-1bdx summary {
+            font-size: 16px;
+            font-weight: 400;
+            cursor: pointer;
+            color: #2d2a26;
+        }
+        .v-top-1bdx summary:hover {
+            color: #e07a5f;
+        }
+        .v-top-1bdx p {
+            margin-top: 12px;
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+        .m-nav-iv1p {
+            padding: 40px 0;
+            border-top: 1px solid #e07a5f;
+            margin-bottom: 40px;
+        }
+        .m-nav-iv1p blockquote {
+            font-size: 13px;
+            font-style: italic;
+            color: #666;
+            max-width: 500px;
+        }
+        .m-nav-iv1p cite {
+            display: block;
+            margin-top: 8px;
+            font-size: 12px;
+            font-style: normal;
+            color: #2d2a26;
+        }
+        .n-side-3pek {
+            padding: 24px 0;
+            border-top: 1px solid #e07a5f;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .v-card-0ut2 {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background-color: #faf8f5;
+                padding: 24px;
+                border-bottom: 1px solid #e07a5f;
+                gap: 16px;
+            }
+            .v-card-0ut2.active {
+                display: flex;
+            }
+            .v-txt-htnw {
+                display: block;
+            }
+            .k-hero-kzq6 h1 {
+                font-size: 24px;
+            }
+            .k-item-4u5s {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
     <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
+        <nav class="v-txt-7bhr">
+            <div class="n-head-v2qg">아현 클럽 가이드</div>
+            <button class="v-txt-htnw" onclick="toggleMenu()">☰</button>
+            <div class="v-card-0ut2" id="menu">
+                <a href="#selection">선택 기준</a>
+                <a href="#precautions">확인사항</a>
+                <a href="#adaptability">적합성</a>
+                <a href="#faq">FAQ</a>
+            </div>
+        </nav>
     </header>
     <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>인문 철학 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>인문 철학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>바뤼흐 스피노자의 에티카(Ethica) 속 동물의 코나투스(Conatus)와 비주류 정서론 분석</h3>
-          <p>네덜란드의 고독한 렌즈 가공 철학자 스피노자의 주저 에티카에서 피력된 코나투스(자신의 존재를 유지하려는 영속적 본성 노력) 개념을 동물에게 투영해 볼 때, 인간 중심적 관점에서 해...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>질 들뢰즈의 리좀(Rhizome) 공간 역학으로 조망한 아날로그 골목길의 인문 구조학</h3>
-          <p>시작과 끝이 규정되지 않고 끊임없이 파편적으로 연결되며 영토를 가로지르는 들뢰즈의 리좀 모델을 격자형 대도시가 아닌 오랜 유기적 골목길의 공간 미학에 적용해 볼 때, 규칙적 구획이...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>중세 스콜라 철학의 영적 통신 논쟁: 천사들의 비물질적 메시지 전달 속도와 주파수</h3>
-          <p>중세 대철학자 토마스 아퀴나스가 주창했던 천사들의 언어(Speech of Angels) 형이상학은 물리적 육체와 공간의 장벽이 없는 순수한 지성적 존재들이 어떻게 공간을 왜곡하고 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>지적 인문 철학 독자들을 위해 준비한 백링크 대행 사이트 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>지적 인문 철학 독자들을 위해 준비한 백링크 대행 사이트 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
-        </div>
-      </div>
+        <section class="k-hero-kzq6">
+            <h1>아현 클럽 추천 가이드</h1>
+            <p>여백 속에서 찾는 나만의 공간. 아현 지역 클럽 선택을 위한 간결한 안내서입니다. 초보자도 쉽게 따라할 수 있도록 조건별로 정리해드려요.</p>
+        </section>
+        <section class="r-box-tdlx" id="selection">
+            <h2>선택 기준</h2>
+            <div class="k-item-4u5s">
+                <div class="k-body-wma6">
+                    <h3>분위기</h3>
+                    <p>조용한 술집형부터 시끄러운 댄스형까지, 원하는 무드에 따라 골라보세요. 리뷰에서 분위기 키워드를 확인하면 좋아요.</p>
+                </div>
+                <div class="k-body-wma6">
+                    <h3>음악 장르</h3>
+                    <p>EDM, 힙합, 인디 등 장르별로 특화된 클럽이 있어요. DJ 라인업이나 플레이리스트를 미리 체크하는 게 방법이에요.</p>
+                </div>
+                <div class="k-body-wma6">
+                    <h3>가격대</h3>
+                    <p>입장료, 음료, 주류 비용을 종합적으로 고려해야 해요. 학생 할인이나 이벤트 시간을 활용하면 예산을 줄일 수 있죠.</p>
+                </div>
+            </div>
+        </section>
+        <section class="r-box-tdlx" id="precautions">
+            <h2>이용 전 확인사항</h2>
+            <ul class="x-btn-zho4">
+                <li>드레스 코드: 캐주얼부터 포멀까지 클럽마다 달라요. 사전에 확인하지 않으면 입장이 제한될 수 있어요.</li>
+                <li>입장 조건: 나이 제한, 신분증 지참 여부를 꼭 체크하세요. 예약이 필요한 곳도 있으니 미리 준비하는 게 좋아요.</li>
+                <li>접근성: 주차 공간이나 대중교통 거리를 파악하면 이동이 편해요. 특히 늦은 시간 귀가 계획도 세워두세요.</li>
+            </ul>
+        </section>
+        <section class="r-box-tdlx" id="adaptability">
+            <h2>조건별 적합성</h2>
+            <div class="k-item-4u5s">
+                <div class="k-body-wma6">
+                    <h3>친구 모임</h3>
+                    <p>단체 방문 시 리저브席가 있는 곳이 좋아요. 가격 합리적인 세트 메뉴를 제공하는 클럽을 찾아보세요.</p>
+                </div>
+                <div class="k-body-wma6">
+                    <h3>솔로 방문</h3>
+                    <p>혼자 즐기기 좋은 바형 클럽이 적합해요. 조용한 코너 좌석이나 카운터석이 있는지 확인하면 편하죠.</p>
+                </div>
+                <div class="k-body-wma6">
+                    <h3>특별한 이벤트</h3>
+                    <p>파티나 테마 이벤트를 원한다면 해당 일정을 미리 검색하세요. 티켓 예매나 초대장이 필요한 경우도 있어요.</p>
+                </div>
+            </div>
+        </section>
+        <section class="r-box-tdlx v-top-1bdx" id="faq">
+            <h2>자주 묻는 질문</h2>
+            <details>
+                <summary>아현 클럽에서 가장 중요한 선택 기준은 뭔가요?</summary>
+                <p>개인 취향에 따라 다르지만, 분위기, 음악 장르, 가격대를 먼저 고려해요. 초보라면 리뷰를 꼼꼼히 보고 방문하는 게 좋아요.</p>
+            </details>
+            <details>
+                <summary>클럽 방문 전에 꼭 확인해야 할 사항이 있나요?</summary>
+                <p>드레스 코드, 입장 조건, 예약 여부를 미리 체크하세요. 주차 공간이나 대중교통 접근성도 확인하면 편해요.</p>
+            </details>
+            <details>
+                <summary>어떤 조건에 따라 클럽을 추천받을 수 있나요?</summary>
+                <p>친구 모임, 솔로 방문, 특별한 이벤트 목적 등 상황에 맞춰 추천드려요. 예산과 음악 취향도 주요 기준이에요.</p>
+            </details>
+            <details>
+                <summary>아현 클럽의 가격대는 보통 어느 정도인가요?</summary>
+                <p>클럽마다 차이가 있지만, 일반적으로 입장료 포함 2만 원에서 5만 원 사이예요. 음료와 주류 가도 별도로 고려하세요.</p>
+            </details>
+        </section>
+        <section class="m-nav-iv1p">
+            <blockquote>
+                "지역 정보를 5년간 정리해온 로컬 가이드로서, 아현 클럽 씬의 변화를 꾸준히 관찰해왔어요. 여러분에게 꼭 맞는 공간을 찾는 데 도움이 되길 바랍니다."
+            </blockquote>
+            <cite>지역 정보 정리가</cite>
+        </section>
     </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
+    <footer class="n-side-3pek">
+        <p>© 2024 아현 클럽 추천 가이드. 모든 권리 보유.</p>
     </footer>
-  </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
