@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://ahyeon-club-note.gongdeok-club.xyz/sitemap.xml
+Sitemap: https://ahyeon-club-note.gongdeok-club.xyz/sitemap-pages.xml
